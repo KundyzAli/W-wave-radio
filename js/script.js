@@ -1,29 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById('open-search-form').addEventListener ('click', (e) => {
-    document.getElementById('search-form').classList.add('search-form_show')
-  })
-
-  // document.getElementById('first-container').addEventListener ('click', (e) => {
-  //   document.getElementById('search-form').classList.remove('search-form_show')
-  // })
-
-  document.getElementById('search-form').addEventListener('submit', (e) => {
-  e.preventDefault()
+  document.querySelector(".header-search").addEventListener("click", function() {
+    document.querySelector(".search-form").classList.add("search-form_show");
+     this.classList.add("active");
   });
-
-  // document.querySelector(".header-btn-open").addEventListener("click", function() {
-  //   document.querySelector(".search-form").classList.add("search-form_show");
-  //    this.classList.add("active");
-  // });
-  //   document.addEventListener("click", function(e) {
-  //     let target = e.target;
-  //     let form = document.querySelector(".search-form");
-  //     if (!target.closest(".header-btns")) {
-  //       form.classList.remove("search-form_show");
-  //        form.querySelector("input").value = "";
-  //        document.querySelector(".header-btn-open").classList.remove("search-form_show")
-  //     }
-  //   })
+    document.addEventListener("click", function(e) {
+      let target = e.target;
+      let form = document.querySelector(".search-form");
+      if (!target.closest(".header-middle-block")) {
+        form.classList.remove("search-form_show");
+         form.querySelector("input").value = "";
+         document.querySelector(".header-search").classList.remove("active")
+      }
+    });
     
 
   // header tab
@@ -122,22 +110,30 @@ let btns = document.querySelectorAll('.play-btn');
 
 btn.addEventListener('click', 
 function() {
-  btn.classList.toggle('play-btn--toggle');
+  // this.querySelector(".play-btn").classList.toggle("play-btn--toggle");
+  btn.classList.toggle("play-btn--toggle");
   this.querySelector(".svg-play").classList.toggle("svg-play--active");
   this.querySelector(".svg-stop").classList.toggle("svg-pause--active");
 })
 
 btns.forEach(function(el) {
   el.addEventListener('click', function() {
-    btns.classList.remove('play-btn--toggle');
-
+  //  this.querySelector(".play-btn").classList.remove("play-btn--toggle");
+   btns.classList.remove("play-btn--toggle");
    this.querySelector(".svg-play").classList.remove("svg-play--active");
    this.querySelector(".svg-stop").classList.remove("svg-pause--active");
-
   })
 });
+ 
+// select
 
-  
+const selector = document.querySelector(".choices") 
+const choices = new Choices(selector, {
+  searchEnabled: false,
+  classNames: {
+    containerOuter: 'choices header_choices',
+   }
+});
 
 // свайпер 
 
@@ -155,6 +151,12 @@ let swiper = new Swiper('.swiper', {
 
   breakpoints: {
     576: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+    },
+
+    696: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 20,
