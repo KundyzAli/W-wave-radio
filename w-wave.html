@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.0/dist/accordion.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -17,7 +17,7 @@
 
 <body>
   <header class="header header-section">
-    <div class="header-container">
+    <div class="header-container container">
       <div class="header-top-block">
         <div class="header-top-content">
           <div class="header-logo">
@@ -199,7 +199,7 @@
           <div class="header-on-air on-air-card-1">
             <button class="header-on-air-btn play-btn" aria-label="Вопроизвести">
               <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="svg-play" d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                <path class="svg-play svg-active" d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
                 <path class="svg-pause" d="M12 2C6.475 2 2 6.475 2 12 2 17.525 6.475 22 12 22 17.525 22 22 17.525 22 12 22 6.475 17.525 2 12 2ZM12 3C7.475 3 3 7.475 3 12 3 16.525 7.475 21 12 21 16.525 21 21 16.525 21 12 21 7.475 16.525 3 12 3ZM9 16 9 8C9 7 10 7 10 8L10 16C10 17 9 17 9 16ZM14 16 14 8C14 7 15 7 15 8L15 16C15 17 14 17 14 16Z" fill="#A1A6B4" fill-rule="evenodd"/>
               </svg>
             </button>
@@ -215,7 +215,7 @@
           <div class="header-on-air on-air-card-2">
             <button class="header-on-air-btn play-btn" aria-label="Вопроизвести">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path class="svg-play" d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+                <path class="svg-play svg-active" d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
                 <path class="svg-pause" d="M12 2C6.475 2 2 6.475 2 12 2 17.525 6.475 22 12 22 17.525 22 22 17.525 22 12 22 6.475 17.525 2 12 2ZM12 3C7.475 3 3 7.475 3 12 3 16.525 7.475 21 12 21 16.525 21 21 16.525 21 12 21 7.475 16.525 3 12 3ZM9 16 9 8C9 7 10 7 10 8L10 16C10 17 9 17 9 16ZM14 16 14 8C14 7 15 7 15 8L15 16C15 17 14 17 14 16Z" fill="#A1A6B4" fill-rule="evenodd"/>
               </svg>
             </button>
@@ -231,30 +231,20 @@
       </div>
 
       <!-- media -->
-      <button class="header-on-air-open">
+      <button class="header-on-air-open header-on-air-btn play-btn" aria-label="Вопроизвести">
         <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_24531_4513)">
-            <path
-              d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z"
-              fill="#A1A6B4" />
-          </g>
-          <defs>
-            <clippath id="clip0_24531_4513">
-              <rect width="24" height="24" fill="white" />
-            </clippath>
-          </defs>
+          <path class="svg-play svg-active" d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+          <path class="svg-pause" d="M12 2C6.475 2 2 6.475 2 12 2 17.525 6.475 22 12 22 17.525 22 22 17.525 22 12 22 6.475 17.525 2 12 2ZM12 3C7.475 3 3 7.475 3 12 3 16.525 7.475 21 12 21 16.525 21 21 16.525 21 12 21 7.475 16.525 3 12 3ZM9 16 9 8C9 7 10 7 10 8L10 16C10 17 9 17 9 16ZM14 16 14 8C14 7 15 7 15 8L15 16C15 17 14 17 14 16Z" fill="#A1A6B4" fill-rule="evenodd"/>
         </svg>
       </button>
-      <button class="header-on-air-open-1">
-        <svg  width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE" />
-          <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white" />
-          <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="white" />
-        </svg>
+      <button class="header-on-air-open-1 header-on-air-btn play-btn" aria-label="Вопроизвести">
+        <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="svg-play svg-active" d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+          <path class="svg-pause" d="M12 2C6.475 2 2 6.475 2 12 2 17.525 6.475 22 12 22 17.525 22 22 17.525 22 12 22 6.475 17.525 2 12 2ZM12 3C7.475 3 3 7.475 3 12 3 16.525 7.475 21 12 21 16.525 21 21 16.525 21 12 21 7.475 16.525 3 12 3ZM9 16 9 8C9 7 10 7 10 8L10 16C10 17 9 17 9 16ZM14 16 14 8C14 7 15 7 15 8L15 16C15 17 14 17 14 16Z" fill="#A1A6B4" fill-rule="evenodd"/>
+        </svg>          
         Что в эфире?
       </button>
       <!-- media -->
-
       <div class="header-on-air-block flex">
         <button class="header-on-air-close">
           <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -264,11 +254,10 @@
           </svg> 
           Что в эфире?
         </button>
-        <!-- header-tab -->
         <div class="header-on-air on-air-card-1">
-          <button class="play-btn header-tab-btn" data-path="one">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="svg-play" d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+          <button class="header-on-air-btn play-btn" aria-label="Вопроизвести">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="svg-play svg-active" d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
               <path class="svg-pause" d="M12 2C6.475 2 2 6.475 2 12 2 17.525 6.475 22 12 22 17.525 22 22 17.525 22 12 22 6.475 17.525 2 12 2ZM12 3C7.475 3 3 7.475 3 12 3 16.525 7.475 21 12 21 16.525 21 21 16.525 21 12 21 7.475 16.525 3 12 3ZM9 16 9 8C9 7 10 7 10 8L10 16C10 17 9 17 9 16ZM14 16 14 8C14 7 15 7 15 8L15 16C15 17 14 17 14 16Z" fill="#A1A6B4" fill-rule="evenodd"/>
             </svg>
           </button>
@@ -282,10 +271,9 @@
           </div>
         </div>
         <div class="header-on-air on-air-card-2">
-          <!-- header tab -->
-          <button class="play-btn header-tab-btn" data-path="two">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="svg-play" d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
+          <button class="header-on-air-btn play-btn" aria-label="Вопроизвести">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="svg-play svg-active" d="M12 2C6.475 2 2 6.475 2 12C2 17.525 6.475 22 12 22C17.525 22 22 17.525 22 12C22 6.475 17.525 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="#A1A6B4"/>
               <path class="svg-pause" d="M12 2C6.475 2 2 6.475 2 12 2 17.525 6.475 22 12 22 17.525 22 22 17.525 22 12 22 6.475 17.525 2 12 2ZM12 3C7.475 3 3 7.475 3 12 3 16.525 7.475 21 12 21 16.525 21 21 16.525 21 12 21 7.475 16.525 3 12 3ZM9 16 9 8C9 7 10 7 10 8L10 16C10 17 9 17 9 16ZM14 16 14 8C14 7 15 7 15 8L15 16C15 17 14 17 14 16Z" fill="#A1A6B4" fill-rule="evenodd"/>
             </svg>
           </button>
@@ -299,7 +287,6 @@
           </div>
         </div>
       </div>
-
       <div class="header-age">
         <svg width="46" height="60" viewbox="0 0 46 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="46" height="60" fill="#E6E8EC" />
@@ -392,14 +379,14 @@
               <button class="podcast-card-btn play-btn" aria-label="Вопроизвести подкаст">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                  <path class="svg-play"
+                  <path class="svg-play svg-active"
                     d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                     fill="#A1A6B4" />
-                    <rect class="svg-pause" x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/> <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/>
-                  <!-- <path class="svg-pause"
-                    d="M12 2C6.475 2 2 6.475 2 12 2 17.525 6.475 22 12 22 17.525 22 22 17.525 22 12 22 6.475 17.525 2 12 2ZM12 3C7.475 3 3 7.475 3 12 3 16.525 7.475 21 12 21 16.525 21 21 16.525 21 12 21 7.475 16.525 3 12 3ZM9 16 9 8C9 7 10 7 10 8L10 16C10 17 9 17 9 16ZM14 16 14 8C14 7 15 7 15 8L15 16C15 17 14 17 14 16Z"
-                    fill="#000" fill-rule="evenodd" /> -->
-                  </svg>
+                  <g class="svg-pause">
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                  </g>
+                </svg>
               </button>
             </div>
           </li>
@@ -450,10 +437,13 @@
               <button class="podcast-card-btn play-btn" aria-label="Вопроизвести подкаст">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                  <path class="svg-play"
+                  <path class="svg-play svg-active"
                     d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                     fill="#A1A6B4" />
-                    <rect class="svg-pause" x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/> <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/>
+                  <g class="svg-pause">
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                  </g>
                 </svg>
               </button>
             </div>
@@ -505,10 +495,13 @@
               <button class="podcast-card-btn play-btn" aria-label="Вопроизвести подкаст">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                  <path class="svg-play"
+                  <path class="svg-play svg-active"
                     d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                     fill="#A1A6B4" />
-                    <rect class="svg-pause" x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/> <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/>
+                  <g class="svg-pause">
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                  </g>
                 </svg>
               </button>
             </div>
@@ -560,10 +553,13 @@
               <button class="podcast-card-btn play-btn" aria-label="Вопроизвести подкаст">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                  <path class="svg-play"
+                  <path class="svg-play svg-active"
                     d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                     fill="#A1A6B4" />
-                    <rect class="svg-pause" x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/> <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/>
+                  <g class="svg-pause">
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                  </g>
                 </svg>
               </button>
             </div>
@@ -615,10 +611,13 @@
               <button class="podcast-card-btn play-btn" aria-label="Вопроизвести подкаст">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                  <path class="svg-play"
+                  <path class="svg-play svg-active"
                     d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                     fill="#A1A6B4" />
-                    <rect class="svg-pause" x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/> <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/>
+                  <g class="svg-pause">
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                  </g>
                 </svg>
               </button>
             </div>
@@ -670,10 +669,13 @@
               <button class="podcast-card-btn play-btn" aria-label="Вопроизвести подкаст">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                  <path class="svg-play"
+                  <path class="svg-play svg-active"
                     d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                     fill="#A1A6B4" />
-                    <rect class="svg-pause" x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/> <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/>
+                  <g class="svg-pause">
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                  </g>
                 </svg>
               </button>
             </div>
@@ -725,10 +727,13 @@
               <button class="podcast-card-btn play-btn" aria-label="Вопроизвести подкаст">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                  <path class="svg-play"
+                  <path class="svg-play svg-active"
                     d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                     fill="#A1A6B4" />
-                    <rect class="svg-pause" x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/> <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/>
+                  <g class="svg-pause">
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                  </g>
                 </svg>
               </button>
             </div>
@@ -781,11 +786,13 @@
               <button class="podcast-card-btn play-btn" aria-label="Вопроизвести подкаст">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2" />
-                  <path class="svg-play"
+                  <path class="svg-play svg-active"
                     d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
                     fill="#A1A6B4" />
-                    <rect class="svg-pause" x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/> 
-                    <rect class="svg-pause" x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4"/>
+                  <g class="svg-pause">
+                    <rect x="19" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                    <rect x="27" y="15" width="2" height="18" rx="1" fill="#A1A6B4" />
+                  </g>
                 </svg>
               </button>
             </div>
@@ -804,7 +811,7 @@
             Передачи
           </h2>
           <p> Автор: </p>
-          <div class="broadcast-select" role="button" aria-label="Выбрать автора передачи">
+          <div class="broadcast-select" aria-label="Выбрать автора передачи">
             <select name="custom-select" id="choices" class="choices">
               <option class="" value=""> Дмитрий Гутенберг </option>
               <!-- <option> Дмитрий Гутенберг </option> -->
@@ -826,7 +833,7 @@
         <div class="broadcast-right">
           <ul class="broadcast-list flex">
             <!-- header tab content -->
-            <li class="broadcast-item header-tab-content" data-target="one">
+            <li class="broadcast-item">
               <img src="img/broadcast-img-1.png" alt="Обложка передачи">
               <div class="broadcast-item-content flex">
                 <h3 class="broadcast-subtitle subtitle">
@@ -1807,7 +1814,7 @@
       <div class="playlist-right-side">
         <div class="playlist-list flex">
           <!-- header tab content -->
-          <button class="playlist-item header-tab-content" data-target="two" aria-label="Воспроизвести музыку">
+          <button class="playlist-item" aria-label="Воспроизвести музыку">
             <span class="playlist-btn play-btn">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="24" cy="24" r="21" fill="#6D31EE" />
